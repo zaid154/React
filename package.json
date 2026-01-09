@@ -1,0 +1,19 @@
+{
+  "name": "git_abc",
+  "version": "1.0.0",
+  "description": "Hello",
+  "main": "abc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaid154/React.git"
+  },
+  "author": "zaid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zaid154/React/issues"
+  },
+  "homepage": "https://github.com/zaid154/React#readme"
+}
