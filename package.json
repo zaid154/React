@@ -1,0 +1,23 @@
+{
+  "name": "git_abc",
+  "version": "1.0.0",
+  "description": "Hello",
+  "scripts": {
+    "start": "parcel abc.html",
+    "dev": "parcel abc.html",
+    "build": "parcel build abc.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaid154/React.git"
+  },
+  "author": "zaid",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.16.3"
+  },
+  "dependencies": {
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  }
+}
