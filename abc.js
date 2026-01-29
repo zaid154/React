@@ -1,4 +1,3 @@
-
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./app.css";
@@ -32,12 +31,20 @@ let Card = ({ data }) => {
       </div>
 
       <div className="res-detail">
-        <h1>{data.name}</h1>
-        <p>{data.instructions}</p>
-        <p style={{ color: "pink", fontSize: "19px" }}>
-          {data.caloriesPerServing}
+        <h5>{data.name}</h5>
+        <p
+          style={{
+            padding: "10px",
+            fontWeight: "900",
+          }}
+        >
+          Ingredients
         </p>
-        <div className="buttons">
+
+        <p>{data.detail}</p>
+
+        <p style={{ color: "pink", fontSize: "19px" }}>₹{data.price}</p>
+        <div className="btn_box">
           <button id="add_cart">Add to cart</button>
           <button id="buy_now">Buy now</button>
         </div>
@@ -62,9 +69,23 @@ let App = () => {
         <Card data={products.product[10]} />
         <Card data={products.product[11]} />
         <Card data={products.product[12]} />
-       
-
-      
+        <Card data={products.product[13]} />
+        <Card data={products.product[14]} />
+        <Card data={products.product[15]} />
+        <Card data={products.product[16]} />
+        <Card data={products.product[17]} />
+        <Card data={products.product[18]} />
+        <Card data={products.product[19]} />
+        <Card data={products.product[20]} />
+        <Card data={products.product[21]} />
+        <Card data={products.product[22]} />
+        <Card data={products.product[23]} />
+        <Card data={products.product[24]} />
+        <Card data={products.product[25]} />
+        <Card data={products.product[26]} />
+        <Card data={products.product[27]} />
+        <Card data={products.product[28]} />
+        <Card data={products.product[29]} />
       </div>
     </>
   );
@@ -72,8 +93,6 @@ let App = () => {
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-// Render ONE component
-<<<<<<< HEAD
 root.render(<App />);
 
 // console.log("nbh");
@@ -83,6 +102,9 @@ const products = {
     {
       id: 1,
       name: "Classic Margherita Pizza",
+      detail:
+        "Fresh mozzarella, tomato sauce, basil on crispy crust. Traditional Italian pizza baked to perfection.",
+      price: 350,
       ingredients: [
         "Pizza dough",
         "Tomato sauce",
@@ -115,6 +137,9 @@ const products = {
     {
       id: 2,
       name: "Vegetarian Stir-Fry",
+      detail:
+        "Tofu and fresh vegetables stir-fried in Asian spices. Served with steamed rice for a healthy meal.",
+      price: 280,
       ingredients: [
         "Tofu, cubed",
         "Broccoli florets",
@@ -150,6 +175,9 @@ const products = {
     {
       id: 3,
       name: "Chocolate Chip Cookies",
+      detail:
+        "Classic homemade cookies with chocolate chips. Soft, chewy, and perfect with milk or tea.",
+      price: 180,
       ingredients: [
         "All-purpose flour",
         "Butter, softened",
@@ -187,6 +215,9 @@ const products = {
     {
       id: 4,
       name: "Chicken Alfredo Pasta",
+      detail:
+        "Creamy Alfredo sauce with tender chicken over fettuccine. Rich and comforting Italian pasta dish.",
+      price: 420,
       ingredients: [
         "Fettuccine pasta",
         "Chicken breast, sliced",
@@ -222,6 +253,9 @@ const products = {
     {
       id: 5,
       name: "Mango Salsa Chicken",
+      detail:
+        "Grilled chicken topped with fresh mango salsa. Sweet and spicy flavors served with rice.",
+      price: 380,
       ingredients: [
         "Chicken thighs",
         "Mango, diced",
@@ -255,6 +289,9 @@ const products = {
     {
       id: 6,
       name: "Quinoa Salad with Avocado",
+      detail:
+        "Healthy quinoa salad with avocado and fresh veggies. Light Mediterranean meal with feta cheese.",
+      price: 320,
       ingredients: [
         "Quinoa, cooked",
         "Avocado, diced",
@@ -287,6 +324,9 @@ const products = {
     {
       id: 7,
       name: "Tomato Basil Bruschetta",
+      detail:
+        "Toasted baguette with tomato-basil topping. Simple Italian appetizer with balsamic glaze.",
+      price: 220,
       ingredients: [
         "Baguette, sliced",
         "Tomatoes, diced",
@@ -320,6 +360,9 @@ const products = {
     {
       id: 8,
       name: "Beef and Broccoli Stir-Fry",
+      detail:
+        "Tender beef and broccoli in savory sauce. Quick Asian stir-fry served over white rice.",
+      price: 450,
       ingredients: [
         "Beef sirloin, thinly sliced",
         "Broccoli florets",
@@ -355,6 +398,9 @@ const products = {
     {
       id: 9,
       name: "Caprese Salad",
+      detail:
+        "Fresh tomatoes, mozzarella, and basil salad. Light Italian dish with balsamic dressing.",
+      price: 250,
       ingredients: [
         "Tomatoes, sliced",
         "Fresh mozzarella cheese, sliced",
@@ -386,6 +432,9 @@ const products = {
     {
       id: 10,
       name: "Shrimp Scampi Pasta",
+      detail:
+        "Linguine pasta with garlic shrimp in white wine sauce. Zesty and flavorful seafood pasta.",
+      price: 550,
       ingredients: [
         "Linguine pasta",
         "Shrimp, peeled and deveined",
@@ -421,6 +470,9 @@ const products = {
     {
       id: 11,
       name: "Chicken Biryani",
+      detail:
+        "Fragrant basmati rice with spiced chicken layers. Traditional Pakistani/Indian biryani with herbs.",
+      price: 650,
       ingredients: [
         "Basmati rice",
         "Chicken, cut into pieces",
@@ -466,6 +518,9 @@ const products = {
     {
       id: 12,
       name: "Chicken Karahi",
+      detail:
+        "Spicy chicken cooked in wok with tomatoes. Authentic Pakistani karahi served with naan.",
+      price: 520,
       ingredients: [
         "Chicken, cut into pieces",
         "Tomatoes, chopped",
@@ -510,6 +565,9 @@ const products = {
     {
       id: 13,
       name: "Aloo Keema",
+      detail:
+        "Ground beef and potatoes in savory spices. Hearty Pakistani keema curry for family meals.",
+      price: 380,
       ingredients: [
         "Ground beef",
         "Potatoes, peeled and diced",
@@ -548,6 +606,9 @@ const products = {
     {
       id: 14,
       name: "Chapli Kebabs",
+      detail:
+        "Spiced beef patties with herbs and pomegranate. Traditional Pakistani street food kebabs.",
+      price: 420,
       ingredients: [
         "Ground beef",
         "Onions, finely chopped",
@@ -586,6 +647,9 @@ const products = {
     {
       id: 15,
       name: "Saag (Spinach) with Makki di Roti",
+      detail:
+        "Mustard greens and spinach with cornbread. Classic Punjabi saag served with makki roti.",
+      price: 320,
       ingredients: [
         "Mustard greens, washed and chopped",
         "Spinach, washed and chopped",
@@ -620,6 +684,9 @@ const products = {
     {
       id: 16,
       name: "Japanese Ramen Soup",
+      detail:
+        "Rich chicken broth with ramen noodles and toppings. Authentic Japanese soup with soft eggs.",
+      price: 680,
       ingredients: [
         "Ramen noodles",
         "Chicken broth",
@@ -657,6 +724,9 @@ const products = {
     {
       id: 17,
       name: "Moroccan Chickpea Tagine",
+      detail:
+        "Chickpeas and vegetables in Moroccan spices. Slow-cooked tagine with olives and cilantro.",
+      price: 350,
       ingredients: [
         "Chickpeas, cooked",
         "Tomatoes, chopped",
@@ -695,6 +765,9 @@ const products = {
     {
       id: 18,
       name: "Korean Bibimbap",
+      detail:
+        "Korean rice bowl with beef, veggies, and egg. Mixed with gochujang sauce for flavor.",
+      price: 620,
       ingredients: [
         "Cooked white rice",
         "Beef bulgogi (marinated and grilled beef slices)",
@@ -731,6 +804,9 @@ const products = {
     {
       id: 19,
       name: "Greek Moussaka",
+      detail:
+        "Layered eggplant and meat with béchamel sauce. Baked Greek casserole with rich flavors.",
+      price: 580,
       ingredients: [
         "Eggplants, sliced",
         "Ground lamb or beef",
@@ -774,6 +850,9 @@ const products = {
     {
       id: 20,
       name: "Butter Chicken (Murgh Makhani)",
+      detail:
+        "Creamy tomato curry with tender chicken pieces. Rich butter chicken served with naan.",
+      price: 550,
       ingredients: [
         "Chicken thighs, boneless and skinless",
         "Yogurt",
@@ -810,6 +889,9 @@ const products = {
     {
       id: 21,
       name: "Thai Green Curry",
+      detail:
+        "Thai coconut curry with chicken and vegetables. Aromatic green curry paste with basil.",
+      price: 490,
       ingredients: [
         "Chicken thighs, boneless and skinless",
         "Green curry paste",
@@ -844,6 +926,9 @@ const products = {
     {
       id: 22,
       name: "Mango Lassi",
+      detail:
+        "Sweet mango blended with yogurt and spices. Refreshing Indian drink perfect for summer.",
+      price: 160,
       ingredients: [
         "Ripe mango, peeled and diced",
         "Yogurt",
@@ -875,6 +960,9 @@ const products = {
     {
       id: 23,
       name: "Italian Tiramisu",
+      detail:
+        "Coffee-soaked ladyfingers with mascarpone cream. Classic Italian dessert dusted with cocoa.",
+      price: 420,
       ingredients: [
         "Espresso, brewed and cooled",
         "Ladyfinger cookies",
@@ -909,6 +997,9 @@ const products = {
     {
       id: 24,
       name: "Turkish Kebabs",
+      detail:
+        "Spiced ground meat kebabs with flatbread. Turkish-style grilled kebabs with tahini sauce.",
+      price: 480,
       ingredients: [
         "Ground lamb or beef",
         "Onions, grated",
@@ -943,6 +1034,9 @@ const products = {
     {
       id: 25,
       name: "Blueberry Banana Smoothie",
+      detail:
+        "Blended blueberries, banana, and Greek yogurt. Healthy smoothie with chia seeds option.",
+      price: 180,
       ingredients: [
         "Blueberries, fresh or frozen",
         "Banana, peeled and sliced",
@@ -973,6 +1067,9 @@ const products = {
     {
       id: 26,
       name: "Mexican Street Corn (Elote)",
+      detail:
+        "Grilled corn with mayo, cheese, and chili powder. Mexican street food-style elote snack.",
+      price: 200,
       ingredients: [
         "Corn on the cob",
         "Mayonnaise",
@@ -1002,6 +1099,9 @@ const products = {
     {
       id: 27,
       name: "Russian Borscht",
+      detail:
+        "Beetroot soup with vegetables and sour cream. Hearty Russian borscht served warm.",
+      price: 320,
       ingredients: [
         "Beets, peeled and shredded",
         "Cabbage, shredded",
@@ -1037,6 +1137,9 @@ const products = {
     {
       id: 28,
       name: "South Indian Masala Dosa",
+      detail:
+        "Crispy fermented rice crepe with potato filling. South Indian breakfast with coconut chutney.",
+      price: 280,
       ingredients: [
         "Dosa batter (fermented rice and urad dal batter)",
         "Potatoes, boiled and mashed",
@@ -1073,6 +1176,9 @@ const products = {
     {
       id: 29,
       name: "Lebanese Falafel Wrap",
+      detail:
+        "Falafel balls in wrap with fresh vegetables. Lebanese street food with tahini dressing.",
+      price: 340,
       ingredients: [
         "Falafel balls",
         "Whole wheat or regular wraps",
@@ -1106,6 +1212,9 @@ const products = {
     {
       id: 30,
       name: "Brazilian Caipirinha",
+      detail:
+        "Brazilian cocktail with cachaça, lime, sugar. Refreshing alcoholic beverage over ice.",
+      price: 300,
       ingredients: [
         "Cachaça (Brazilian sugarcane spirit)",
         "Lime, cut into wedges",
@@ -1137,7 +1246,4 @@ const products = {
   skip: 0,
   limit: 30,
 };
-=======
-root.render(<Apps2/>);
-
->>>>>>> edc8283e0abef9fb8c83dc66c3a80f6ace62a726
+// root.render(<Apps2/>);

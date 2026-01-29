@@ -5,6 +5,8 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+/* ================= HEADER ================= */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -14,7 +16,7 @@
 
 .list > ul {
   display: flex;
-  gap: 30px;
+  gap: 10px;
   list-style: none;
   font-weight: 700;
   padding: 10px;
@@ -30,91 +32,97 @@
   height: 50px;
 }
 
-.cart {
-  align-items: center;
-  justify-content: center;
-  width: auto;
-  height: auto;
-  margin-top: 10px;
-  background: #ffffff;
-  padding: 5px;
+/* ================= CART LIST ================= */
+
+.cart-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
 }
 
-.cart > .cart-img >img {
+/* ================= CART CARD ================= */
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 18%;
+  height: 400px;
+  margin-top: 10px;
+  background: #ffffff;
+  gap: 10px;
+
+  border-radius: 15px;
+
+}
+
+.cart > .cart-img > img {
+  margin-top: 10px;
   width: 200px;
   height: 200px;
-  padding: 5px;
+  border-radius: 10px;
 }
 
 .cart > .res-detail {
   text-align: center;
-  margin-top: 2px;
   width: 200px;
+  /* gap: 10px; */
 }
 
 .cart > .res-detail > p {
+  /* margin: 5px; */
+  margin-bottom: 5px;
   font-weight: 700;
   font-size: 12px;
 }
 
 .cart:hover {
   box-shadow:
-  0 4px 8px 0 #ccc,
-  0 6px 20px 0 #ccc;
+    0 4px 8px 0 #ccc,
+    0 6px 20px 0 #ccc;
   transform: scale(1.01);
   transition: all 0.3s ease-in-out;
 }
 
-.cart-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
 
-
-.buttons{
+.btn_box {
   display: flex;
   padding: 5px;
   margin: 5px;
   gap: 10px;
   justify-content: center;
-  /* align-items: center; */
-  /* justify-self: unset; */
+  align-items: center;
 }
 
-#add_cart{
-  padding: auto;
-  margin: auto;
-  background: goldenrod;
+#add_cart {
+  background: #333;
   color: #ffffff;
   height: 30px;
   width: 80px;
   border-radius: 5px;
-  
+  border: none;
 }
 
-#add_cart:hover{
-  transform: scale(1.01);
+#add_cart:hover {
+  transform: scale(1.05);
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
 
-
-
-
-#buy_now{
-  padding: auto;
-  margin: auto;
-  background: goldenrod;
+#buy_now {
+  background: #ff6f61;
   color: #ffffff;
   height: 30px;
-  width: 60px;
+  width: 100px;
   border-radius: 5px;
-  
+  border: none;
 }
 
-#buy_now:hover{
-  transform: scale(1.01);
+#buy_now:hover {
+  transform: scale(1.05);
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
+
+
