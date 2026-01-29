@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Hello",
   "scripts": {
-    "start": "parcel abc.html",
-    "dev": "parcel abc.html",
-    "build": "parcel build abc.html"
+    "start": "npx parcel index.html",
+    "dev": "npx parcel index.html",
+    "build": "npx parcel build index.html"
   },
   "repository": {
     "type": "git",

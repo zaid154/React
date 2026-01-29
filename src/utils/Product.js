@@ -1,104 +1,4 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./app.css";
-
-const Header = () => {
-  return (
-    <div className="header">
-      <div className="logo">
-        <img
-          src="https://png.pngtree.com/png-vector/20220705/ourmid/pngtree-food-logo-png-image_5687686.png"
-          alt="logo"
-        />
-      </div>
-      <div className="list">
-        <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
-          <li>Cart</li>
-        </ul>
-      </div>
-    </div>
-  );
-};
-
-let Card = ({ data }) => {
-  return (
-    <div className="cart">
-      <div className="cart-img">
-        <img src={data.image} alt="food" />
-      </div>
-
-      <div className="res-detail">
-        <h5>{data.name}</h5>
-        <p
-          style={{
-            padding: "10px",
-            fontWeight: "900",
-          }}
-        >
-          Ingredients
-        </p>
-
-        <p>{data.detail}</p>
-
-        <p style={{ color: "pink", fontSize: "19px" }}>₹{data.price}</p>
-        <div className="btn_box">
-          <button id="add_cart">Add to cart</button>
-          <button id="buy_now">Buy now</button>
-        </div>
-      </div>
-    </div>
-  );
-};
-let App = () => {
-  return (
-    <>
-      <Header />
-      <div className="cart-list">
-        <Card data={products.product[0]} />
-        <Card data={products.product[1]} />
-        <Card data={products.product[2]} />
-        <Card data={products.product[3]} />
-        <Card data={products.product[4]} />
-        <Card data={products.product[5]} />
-        <Card data={products.product[6]} />
-        <Card data={products.product[8]} />
-        <Card data={products.product[9]} />
-        <Card data={products.product[10]} />
-        <Card data={products.product[11]} />
-        <Card data={products.product[12]} />
-        <Card data={products.product[13]} />
-        <Card data={products.product[14]} />
-        <Card data={products.product[15]} />
-        <Card data={products.product[16]} />
-        <Card data={products.product[17]} />
-        <Card data={products.product[18]} />
-        <Card data={products.product[19]} />
-        <Card data={products.product[20]} />
-        <Card data={products.product[21]} />
-        <Card data={products.product[22]} />
-        <Card data={products.product[23]} />
-        <Card data={products.product[24]} />
-        <Card data={products.product[25]} />
-        <Card data={products.product[26]} />
-        <Card data={products.product[27]} />
-        <Card data={products.product[28]} />
-        <Card data={products.product[29]} />
-      </div>
-    </>
-  );
-};
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(<App />);
-
-// console.log("nbh");
-
-const products = {
-  product: [
+const products = [
     {
       id: 1,
       name: "Classic Margherita Pizza",
@@ -1241,9 +1141,7 @@ const products = {
       reviewCount: 55,
       mealType: ["Beverage"],
     },
-  ],
-  total: 50,
-  skip: 0,
-  limit: 30,
-};
-// root.render(<Apps2/>);
+  ];
+
+
+  export default products;
