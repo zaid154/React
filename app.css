@@ -49,16 +49,18 @@
   margin-top: 10px;
   background: #ffffff;
   gap: 10px;
-
   border-radius: 15px;
 }
 
-.cart > .cart-img > img {
+.cart-img {
   margin-top: 10px;
   width: 200px;
   height: 200px;
   border-radius: 10px;
+  background-size: cover;
+  background-position: center;
 }
+
 
 .cart > .res-detail {
   text-align: center;
@@ -128,3 +130,32 @@
   font-size: 19px;
 }
 
+#search_bar {
+  width: 700px;
+  height: 40px;
+  border-radius: 7px;
+  border: 1px solid black;
+  padding: 0 10px;
+}
+
+#category {
+  height: 40px;
+  border-radius: 7px;
+  border: 1px solid black;
+  
+}
+
+.diet_dot{
+  height: 35px;
+  width: 35px;
+  /* background-color: rgb(255, 0, 0); */
+  border-radius: 0px 12px 0px 43px;
+  /* align-items: self-end; */
+  /* margin-left: 100px; */
+  /* display: flex; */
+  /* align-content: flex-end; */
+  /* justify-items: end; */
+  /* justify-content: right; */
+  margin-left: auto;
+  /* margin-top: 5px; */
+}

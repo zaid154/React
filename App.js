@@ -5,6 +5,11 @@ import Header from "./src/Component/Header";
 import products from "./src/utils/Product";
 import Card from "./src/Component/Cart";
 
+
+
+
+
+
 let App = () => {
   return (
     <>
@@ -26,3 +31,5 @@ const handleAddCart = (item) => {
   alert("Added to cart");
   console.log(item.id, item.name);
 };
+
+
