@@ -6,21 +6,31 @@ const Footer = () => {
   return (
     <div className="parent">
       <div className="home_footer">
-        <img src={LOGO} alt="food" />
-        {/* <p>YumRun</p> */}
-        <br></br>
+        <div className="logo_row">
+          <img src={LOGO} alt="food" />
+          <b>YumRun</b>
+        </div>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
           scrambled it to make a type specimen book. It has survived not
         </p>
+        <div className="lodo_so">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShI4yriK7VQa75x57C5GJZ6BLePZsENBwmzQ&s" alt="facebook"></img>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShI4yriK7VQa75x57C5GJZ6BLePZsENBwmzQ&s" alt="facebook"></img>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShI4yriK7VQa75x57C5GJZ6BLePZsENBwmzQ&s" alt="facebook"></img>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShI4yriK7VQa75x57C5GJZ6BLePZsENBwmzQ&s" alt="facebook"></img>
+
+            
+          </div>
       </div>
 
       <div className="pages_footer">
         <label
           style={{
-            color:"white"
+            color: "white",
+            alignItems: "start",
           }}
         >
           Pages
@@ -33,7 +43,19 @@ const Footer = () => {
       </div>
 
       <div className="service_footer">
-        <label>service</label>
+        <label
+          style={{
+            color: "white",
+          }}
+        >
+          service
+        </label>
+
+        <p>Restaurant Listing</p>
+        <p>Menu Management</p>
+        <p>Bulk Orders</p>
+        <p>Party Orders</p>
+        <p>Cloud Kitchen Support</p>
       </div>
       <div className="map_location">
         <h4>Maps Location</h4>

@@ -13,6 +13,8 @@
   color: #ffffff;
 }
 
+
+
 .home_footer {
   /* padding: 20px; */
   width: 35%;
@@ -31,17 +33,18 @@
   display: "flex";
   /* justify-content: center; */
   align-items: center;
-  color: #DDDDDD;
+  color: #dddddd;
   gap: 20px;
 }
 
-
-
 .service_footer {
-  width: 12%;
+  width: 15%;
   /* background-color: rgb(218, 26, 236); */
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #dddddd;
+  gap: 20px;
 }
 
 .map_location {
@@ -49,15 +52,41 @@
   /* background-color: rgb(30, 175, 191); */
   /* display: flex; */
   justify-content: center;
+  padding-left:10px ;
 }
 
 .home_footer img {
   height: 50px;
   width: 50px;
 }
+.logo_row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* justify-content: center; */
+  align-content: center;
+  /* background: palegoldenrod; */
+}
 
+.logo_row p {
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.home_footer p {
+  margin-top: 25px;
+}
 
+.lodo_so {
+  display: flex;
+  gap: 10px;
+}
 
-
-
+.lodo_so img {
+  margin-top: 20px;
+  height: 35px;
+  width: 35px;
+  border-radius: 5px;
+}
 
