@@ -30,21 +30,18 @@ const Card = ({ data }) => {
       </div>
 
       <div className="res-detail">
-        <h5>{data.name}</h5>
-
-        <p style={{ padding: "10px", fontWeight: "900" }}>Ingredients</p>
+        <h5 style={{marginBottom:"10px" , fontSize: "18px" }}>{data.name}</h5>
+        <p style={{ fontWeight: "900", fontSize: "14px" }}>Ingredients</p>
 
         <p>{data.detail}</p>
 
-        <div className="price_rating">
+        <div className="price_rating" style={{ marginTop: "15px" }}>
           <span>₹{data.price}</span>
           <span>{data.rating} ⭐</span>
         </div>
 
         <div className="btn_box">
-          <button id="add_cart">
-            Add to cart
-          </button>
+          <button id="add_cart">Add to cart</button>
 
           <button id="buy_now">Buy now</button>
         </div>

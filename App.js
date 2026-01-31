@@ -4,7 +4,7 @@ import "./App.css";
 import Header from "./src/Component/Header";
 import products from "./src/utils/Product";
 import Card from "./src/Component/Cart";
-
+import Footer from "./src/Component/Footer.js"
 
 
 
@@ -19,6 +19,9 @@ let App = () => {
           return <Card data={products} key={products.id} />;
         })}
       </div>
+
+      <Footer/>
+
     </>
   );
 };
